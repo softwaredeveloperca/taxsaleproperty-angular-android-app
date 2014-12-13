@@ -2,10 +2,10 @@
 <widget id="com.ionicframework.ice102230" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
   <name>ice</name>
   <description>
-        An Ionic Framework and Cordova project.
+        Ontario Tax Sale Properties
     </description>
-  <author email="hi@ionicframework" href="http://ionicframework.com/">
-      Ionic Framework Team
+  <author email="rob@informational.ca" href="http://www.informational.ca">
+      Rob
     </author>
   <content src="index.html"/>
   <access origin="*"/>
@@ -13,7 +13,13 @@
   <preference name="UIWebViewBounce" value="false"/>
   <preference name="DisallowOverscroll" value="true"/>
   <preference name="BackupWebStorage" value="none"/>
+  <preference name="stay-in-webview" value="false" />
   <feature name="StatusBar">
     <param name="ios-package" value="CDVStatusBar" onload="true"/>
   </feature>
+<icon src="res/drawable-mdpi/ic_launcher.png" gap:platform="android" gap:qualifier="mdpi" />
+<icon src="res/drawable-hdpi/ic_launcher.png" gap:platform="android" gap:qualifier="hdpi" />
+<icon src="res/drawable-xhdpi/ic_launcher.png" gap:platform="android" gap:qualifier="xhdpi" />
+<icon src="res/drawable-xxhdpi/ic_launcher.png" gap:platform="android" gap:qualifier="xxhdpi" />
+<icon src="res/drawable-xxxhdpi/ic_launcher.png" gap:platform="android" gap:qualifier="xxxhdpi" />
 </widget>
