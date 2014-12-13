@@ -1,0 +1,12 @@
+<ion-view title="Research">
+  <ion-content class="padding">
+    <h1>Research</h1>
+    <div class="list">
+    <div class="item" 
+    collection-item-height="100"
+      collection-repeat="item in researchtypes">
+      <a class="button icon-right ion-chevron-right button-{{item.type}}" href="#/tab/research/{{item.id}}">{{item.name}}</a>
+    </div>
+  </div>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,13 @@
+<ion-view title="Tax Sale Properties">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="item in listings" can-swipe="listCanSwipe" type="item-text-wrap" href="#/tab/listing/{{item.ListingDate}}" class="item-text-wrap">
+      	{{item.ListingDate}}<br />({{item.Cities}})  {{item.CityNames}}
+        <ion-option-button class="button-positive"
+                       ng-click="share(item)">
+      Share
+    </ion-option-button>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
