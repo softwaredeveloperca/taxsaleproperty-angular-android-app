@@ -3,7 +3,7 @@
     version="1.0.0" xmlns="http://www.w3.org/ns/widgets" 
     xmlns:gap="http://phonegap.com/ns/1.0">
   <gap:platform name="android" />
-  <name>Ontario Tax Sale Properties</name>
+  <name>Ontario Tax Sales</name>
   <description>
         Ontario Tax Sale Properties
     </description>
