@@ -1,0 +1,15 @@
+<ion-view title="Property {{title}}">
+  <ion-content has-header="true" padding="true">
+  
+  
+  <h3>{{propertyinfo.Title | formatTitle}}</h3>
+  <h4>{{propertyinfo.RegionName}}</h4>
+  <p ng-bind-html="propertyinfo.CHeader"></p>
+  <p ng-bind-html="propertyinfo.Content" style="font-weight:bold"></p>
+  <p ng-bind-html="propertyinfo.CFooter"></p>
+  <a href="{{propertyinfo.Website}}">{{propertyinfo.Website}}</a>
+  <br />
+  <br />
+  <div id="map" data-tap-disabled="true"></div>
+  </ion-content>
+</ion-view>

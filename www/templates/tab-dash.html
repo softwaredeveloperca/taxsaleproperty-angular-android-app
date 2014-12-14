@@ -1,0 +1,34 @@
+<ion-view title="My Properties">
+  <ion-content class="padding">
+    <h1>My Properties</h1>
+    Browse through the property listings and click on any property you want to add to your list.<br></br>
+    <ion-list canswap="true"> 
+      <ion-item on-swipe="save(property.TaxSalePropertyID, $index)" ng-repeat="property in properties"
+ type="item-text-wrap" href="#/tab/myproperty/{{property.TaxSalePropertyID}}">
+
+  <!--  <button class="button icon-left ion-home pull-right"></button> -->
+<h2>{{property.Title  | formatTitle}} ({{property.ListingDate}}) <!--<a class="ion-close-circled" class="pull-right" ng-click="save(property.TaxSalePropertyID, $index)">
+</a> --></h2><!--
+		<ion-option-button class="button-positive" ng-click="share(property.TaxSalePropertyID)">
+      Share
+    </ion-option-button>-->
+        <p ng-bind-html="property.Content" >
+        		</p>
+             
+            <!--    
+                <label class="item item-input item-select">
+    <div class="input-label" ng-click="share(property.TaxSalePropertyID)">
+      Lightsaber
+    </div>
+    <select>
+      <option>Blue</option>
+      <option selected>Green</option>
+      <option>Red</option>
+    </select>
+  </label>-->
+
+               
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
