@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="com.ionicframework.ice102230" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget xmlns = "http://www.w3.org/ns/widgets"
+xmlns:gap = "http://phonegap.com/ns/1.0"
+id = "com.phonegap.helloworld"
+version = "1.0.0">
   <name>Ontario Tax Sales</name>
   <description>
         Ontario Tax Sale Properties
@@ -16,7 +19,6 @@
   <feature name="StatusBar">
     <param name="ios-package" value="CDVStatusBar" onload="true"/>
   </feature>
-  <gap:plugin name="org.apache.cordova.inappbrowser" />
 <icon src="res/drawable-mdpi/ic_launcher.png" gap:platform="android" gap:qualifier="mdpi" />
 <icon src="res/drawable-hdpi/ic_launcher.png" gap:platform="android" gap:qualifier="hdpi" />
 <icon src="res/drawable-xhdpi/ic_launcher.png" gap:platform="android" gap:qualifier="xhdpi" />
