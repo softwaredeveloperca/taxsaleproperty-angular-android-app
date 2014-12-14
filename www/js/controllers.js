@@ -14,7 +14,7 @@ angular.module('starter.controllers', ['ionic', 'ionic.utils'])
 	
  	 }; 	
 })
-
+/*
 .controller('MapCtrl', ['$scope', function($scope) {
 $scope.map = {
 center: {
@@ -31,7 +31,7 @@ longitude: -74
 }
 }
 }])
-/*
+
 .controller('MapCtrl', function($scope) {
       function initialize() {
         var site = new google.maps.LatLng(55.9879314,-4.3042387);
@@ -58,7 +58,7 @@ longitude: -74
 		Listings.myProperty($stateParams.adata).then(function(propertyinfo) {
 		console.log(propertyinfo);
 		$scope.propertyinfo = propertyinfo;
-		
+		/* next version
 		        var myLatlng = new google.maps.LatLng(43.07493,-89.381388);
         
         var mapOptions = {
@@ -88,6 +88,7 @@ longitude: -74
         });
 
         $scope.map = map;
+		*/
 
 	}); 	
 })
@@ -156,21 +157,22 @@ longitude: -74
 			});
   		});
 	
- 	 });
+ 	 };
 })
 	
 
 .controller('ListingsCtrl', function($scope, Listings) {
-	var cnt=0;
+	/*
+	$scope.toggleRight = function() {
+    $ionicSideMenuDelegate.toggleRight();
+  };
+  */
+	
 	Listings.all().then(function(listings){
+		//users is an array of user objects
 		$scope.listings = listings;
 	});
-	
-	 $scope.refresh = function() {
-	 Listings.some(cnt).then(function(listings){
-		$scope.listings.push(listings);
-		cnt++;
-  	});
-	 };
+
+ // $scope.listings = Listings.all();
 });
 
