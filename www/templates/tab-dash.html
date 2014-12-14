@@ -1,8 +1,10 @@
 <ion-view title="My Properties">
   <ion-content class="padding">
+    <ion-list canswap="true"> 
+    <ion-item>
     <h1>My Properties</h1>
     Browse through the property listings and click on any property you want to add to your list.<br></br>
-    <ion-list canswap="true"> 
+    </ion-item>
       <ion-item on-swipe="save(property.TaxSalePropertyID, $index)" ng-repeat="property in properties"
  type="item-text-wrap" href="#/tab/myproperty/{{property.TaxSalePropertyID}}">
 
@@ -13,7 +15,7 @@
       Share
     </ion-option-button>-->
         <p ng-bind-html="property.Content" >
-        		</p>
+        		<>''/p>
              
             <!--    
                 <label class="item item-input item-select">
