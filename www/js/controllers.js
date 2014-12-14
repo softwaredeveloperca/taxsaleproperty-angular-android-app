@@ -113,7 +113,7 @@ longitude: -74
 })
 
 .controller('WebsiteCtrl', function($scope, $window) {
-	$window.open('//www.taxsaleproperty.org');
+	$window.open('//www.taxsaleproperty.org', '_system', 'location=yes');
 })
 
 
@@ -156,17 +156,21 @@ longitude: -74
 			});
   		});
 	
- 	 };
+ 	 });
 })
 	
 
 .controller('ListingsCtrl', function($scope, Listings) {
-	
+	var cnt=0;
 	Listings.all().then(function(listings){
-		//users is an array of user objects
 		$scope.listings = listings;
 	});
-
- // $scope.listings = Listings.all();
+	
+	 $scope.refresh = function() {
+	 Listings.some(cnt).then(function(listings){
+		$scope.listings.push(listings);
+		cnt++;
+  	});
+	 };
 });
 

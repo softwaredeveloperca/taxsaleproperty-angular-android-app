@@ -69,6 +69,14 @@ angular.module('starter.services', ['ionic', 'ionic.utils'])
 		});
    
     },
+	  some: function(start) {
+		return $http.get('http://www.informational.ca/api/index.php?secret=check&action=site&data[]=SiteAction=GetTaxSales&data[]=Dates=1&Start='+start).then(function(resp) {
+			console.log(resp.data.Data);
+			listings=resp.data.Data;
+			return listings;
+		});
+   
+    },
     get: function(listingDate) {
 	
       	return $http.get('http://informational.ca/api/index.php?secret=check&action=site&data[]=SiteAction=GetTaxSales&data[]=Properties=1&data[]=ADate=' + listingDate).then(function(resp) {
